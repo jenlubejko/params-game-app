@@ -16,4 +16,15 @@ class ParamsGameController < ApplicationController
     end
     render 'guess.html.erb'
   end
+  def url_segment_params_method
+    @value = params["this_is_a_variable"]
+    render 'url_segment_params.html.erb'
+  end
+  def form_params_method
+    render 'form.html.erb'
+  end
+  def form_result_method
+    @value  = params["form_message"]
+    render 'form_result.html.erb'
+  end
 end
