@@ -1,0 +1,12 @@
+<h1>Your message is:</h1>
+
+<p><%= @message %></p>
+
+<% @name %>
+
+<% if @name.start_with?('a') %>
+<% @message2 = "Hey, your name starts with the first letter of the alphabet!" %>
+
+<% end %>
+
+<p><%= @message2 %></p>
